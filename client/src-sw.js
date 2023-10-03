@@ -28,16 +28,14 @@ registerRoute(({ request }) => request.mode === 'navigate', pageCache);
 
 
 // call back function that handles the requests that we want to cache 
-registerRoute(({ request }) => request.mode === 'navigate', pageCache);
-new StaleWhileRevalidate({
-  
-  cacheName: 'asset-cache',
-  plugins: [
-    // This plugin will filter through the responses to a maximum-age of 30 days
-    new CacheableResponsePlugin({
-      statuses: [0, 200],
-    }),
-    
-  ],
-})
+registerRoute(
+  ({ request }) => ['style', 'script', 'worker'].includes(request.destination),
+  new StaleWhileRevalidate({
+    catchName: 'asset-cache',
+    plugins: [
+      new CacheableResponsePlugin({
+        statuses: [0, 200],
+      }),
+    ],
+  })
 );
