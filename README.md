@@ -1,4 +1,7 @@
 # Text-Editor
+
+![alt text](/assets/images/install.prompt.png)
+
   This is a single-page web application that runs in the browser and edits texts. This applicayion meets all the  PWA critearia. Additionally , it features multiple data persistence techniques thta serve as redundancy.  In addition, this application has the ability to function offline.
  
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -9,6 +12,8 @@
   - [Usage](#usage)
   - [Contribution](#contribution)
   - [Testing](#testing)
+   - [Demonstration](demonstration)
+  - [Credits](credits)
   - [License](#license)
   - [Questions](#questions)
 
@@ -16,7 +21,7 @@
   <a name="installation"></a>
   ## Installation
 
-  Please clone the repository on your local machine, then run `npm install`, `npm run buiuld'.
+  Please clone the repository on your local machine, then run `npm install`, `npm run build`.
 
   <a name= "usage"></a>
 
@@ -34,6 +39,18 @@
   ## Testing 
 
   Run the server on your browser and inspect to look for any errors.
+
+  <a name= "demonstration"></a>
+
+  ## Demonstartion
+ 
+ [Here's a link to the deployed application on Heroku]()
+
+ <a name= "credits"></a>
+
+ ## Credits
+ 
+ starter code provided by George Washington fullstack web development bootcamp, provided by Edx.
 
   <a name="license"></a>
 
