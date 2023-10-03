@@ -44,7 +44,7 @@
 
   ## Demonstration
  
- [Here's a link to the deployed application on Heroku]()
+ [Here's a link to the deployed application on Heroku](https://text-editorrr-0f654fcabbb3.herokuapp.com/)
 
  <a name= "credits"></a>
 
