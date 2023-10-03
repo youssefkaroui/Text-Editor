@@ -12,8 +12,8 @@
   - [Usage](#usage)
   - [Contribution](#contribution)
   - [Testing](#testing)
-   - [Demonstration](demonstration)
-  - [Credits](credits)
+  - [Demonstration](#demonstration)
+  - [Credits](#credits)
   - [License](#license)
   - [Questions](#questions)
 
@@ -42,7 +42,7 @@
 
   <a name= "demonstration"></a>
 
-  ## Demonstartion
+  ## Demonstration
  
  [Here's a link to the deployed application on Heroku]()
 
