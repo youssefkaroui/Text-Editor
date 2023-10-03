@@ -28,7 +28,7 @@ registerRoute(({ request }) => request.mode === 'navigate', pageCache);
 
 
 // call back function that handles the requests that we want to cache 
-registerRoute( ({ request }) => ['style', 'script', 'worker'].includes(request.destination),
+registerRoute(({ request }) => request.mode === 'navigate', pageCache);
 new StaleWhileRevalidate({
   
   cacheName: 'asset-cache',
@@ -37,10 +37,7 @@ new StaleWhileRevalidate({
     new CacheableResponsePlugin({
       statuses: [0, 200],
     }),
-    new ExpirationPlugin({
-      maxEntries: 60,
-      maxAgeSeconds: 30 * 24 * 60 * 60, //30 Days
-    })
+    
   ],
 })
 );
